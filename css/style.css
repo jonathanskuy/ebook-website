@@ -18,6 +18,9 @@ header {
     padding:40px;
     display:flex;
     justify-content:space-between;
+    position:fixed;
+    width:100vw;
+    box-sizing:border-box;
 }
 
 .header-title {
@@ -40,4 +43,102 @@ header {
 .navbar-link {
     margin-left:50px;
     font-weight:bold;
+}
+
+.navbar-link a {
+    text-decoration:none;
+    color:white;
+}
+
+#welcome {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:80vh;
+    padding-top:200px;
+}
+
+.welcome {
+    background-image:linear-gradient(rgba(0, 238, 255, 0.6), rgba(0, 238, 255, 0.6));
+    padding:100px;
+}
+
+.welcome-msg {
+    font-weight:bold;
+    font-size:40px;
+    text-align:center;
+}
+
+.welcome-quote {
+    margin-top:50px;
+}
+
+.welcome-quote-text, .welcome-quote-author {
+    text-align:center;
+}
+
+.welcome-buttons {
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.welcome-buttons button {
+    flex:1;
+    max-width:100px;
+    min-height:50px;
+    margin:20px;
+    border:0;
+    border-radius:10px;
+    background-color:white;
+    font-weight:bold;
+}
+
+#about {
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+.half-div {
+    flex:1;
+    align-items:stretch;
+}
+
+.about-img {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-img img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.about-title {
+    font-weight:bold;
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.about-desc {
+    display:flex;
+    flex-direction:column;
+}
+
+.about-desc span {
+    margin-bottom:25px;
+    font-size:20px;
 }

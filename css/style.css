@@ -1,3 +1,7 @@
+html {
+    scroll-behavior:smooth;
+}
+
 body {
     height:100vh;
     margin:0;
@@ -92,13 +96,15 @@ header {
     border-radius:10px;
     background-color:white;
     font-weight:bold;
+    cursor:pointer;
 }
 
-#about {
+#about, #gallery, #contact, footer {
     background-color:black;
     color:white;
     display:flex;
     justify-content:center;
+    margin-bottom:100px;
 }
 
 .half-div {
@@ -126,7 +132,7 @@ header {
     margin-right:50px;
 }
 
-.about-title {
+.about-title, .section-title {
     font-weight:bold;
     font-size:50px;
     margin-top:30px;
@@ -141,4 +147,53 @@ header {
 .about-desc span {
     margin-bottom:25px;
     font-size:20px;
+}
+
+#gallery, #contact {
+    padding-bottom:100px;
+    flex-direction:column;
+    align-items:center;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.gallery-item {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgba(0, 52, 59, 1);
+    padding:30px;
+    border-radius:20px;
+}
+
+.gallery-item img {
+    height:500px;
+}
+
+.book-title {
+    font-size:20px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.contact-info-list {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+    max-width:500px;
+}
+
+.contact-info {
+    font-size:20px;
+    text-align:center;
+}
+
+footer {
+    padding:40px;
 }

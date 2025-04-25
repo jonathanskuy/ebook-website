@@ -2,8 +2,8 @@ html {
     scroll-behavior:smooth;
 }
 
-body {
-    height:100vh;
+html, body {
+    height:100%;
     margin:0;
     padding:0;
 }
@@ -87,7 +87,7 @@ header {
     margin-top:50px;
 }
 
-.welcome-buttons button {
+.welcome-buttons button, .form-submit-button {
     flex:1;
     max-width:100px;
     min-height:50px;
@@ -196,4 +196,38 @@ header {
 
 footer {
     padding:40px;
+}
+
+#login-registration {
+    background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),url("../img/login-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.form-container {
+    background-image:linear-gradient(rgba(0, 238, 255, 0.8), rgba(0, 238, 255, 0.8));
+    width:800px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:auto;
+}
+
+.field {
+    display:flex;
+    flex-direction:column;
+    margin:30px;
+}
+
+#login {
+    display:block;
+}
+
+#registration {
+    display:none;
 }

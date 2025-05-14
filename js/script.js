@@ -25,7 +25,7 @@ function Login() {
         return;
     }
 
-    window.location.href = "main.html#welcome";
+    window.location.href = "../src/main.html";
 }
 
 function Registration() {
@@ -44,5 +44,5 @@ function Registration() {
         return;
     }
 
-    window.location.href = "main.html#welcome";
+    window.location.href = "../src/main.html";
 }
